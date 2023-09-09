@@ -96,6 +96,10 @@ input[type='text'], input[type='tel'], input[type='password'] {
     padding: 2px 1.5em;
 }
 
+input:invalid {
+    border: 1px solid  red;
+}
+
 .log-in {
     text-decoration: none;
     color: var(--black);
@@ -114,6 +118,9 @@ h1.general-txt.form-input{
     font-size: medium;
 }
 
+.invalidPwd {
+    color: red;
+}
 
 @media screen and (min-width: 700px) {
 
@@ -124,6 +131,7 @@ h1.general-txt.form-input{
     #page-form {
         display: flex;
         width: 60vw;
+        height: 50vh;
         flex-flow: row wrap;
         font-size: 1rem;
     }
